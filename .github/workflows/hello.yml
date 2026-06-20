@@ -1,0 +1,30 @@
+# Workflow
+# Should have name 
+
+name: Hello
+# On tells when the workflow run (Give identation by tab)
+on: 
+  workflow_dispatch: 
+  
+# Jobs
+# Should be inside the workflow
+# job tells what workflow should do, there are one or more jobs 
+# jobs is an objest so it needs identaton
+jobs:
+  # 1st job(given identation) 
+  say-Hello:
+    # creates an Ephermal cotainer with ubuntu running 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hellow to everyone
+        run: echo "Hello Dosto"
+
+
+# Steps
+# should be inside the jobs
+
+
+# Actions
+# should be inside the steps 
+
+
